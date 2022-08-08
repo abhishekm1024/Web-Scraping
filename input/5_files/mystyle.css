@@ -1,0 +1,106 @@
+#logo-header {
+    width: auto;
+    height: 60px;
+}
+
+.logo-blurbg {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(75%, rgba(255, 255, 255, 0)));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 75%);
+}
+
+.cor-red {
+    color: #cc0000;
+}
+
+.cor-gray {
+    color: #666;
+}
+
+a {
+    color: #cc0000;
+    line-height: 1.6;
+}
+
+.team h3 i {
+    color: #aaa;
+    font-size: 20px;
+    padding: 4px;
+    background: #f7f7f7;
+}
+
+.team h3 i:hover {
+    color: #fff;
+    background: #e74c3c;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.team h3 a,
+.team h3 a:hover {
+    text-decoration: none;
+}
+
+
+/* Sticky footer */
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -66px;
+}
+
+.push {
+    height: 66px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* End sticky footer */
+
+ul.who a {
+    color: #666;
+}
+
+
+/* Bootstrap bug workaround */
+
+.dropdown-backdrop {
+    position: static;
+}
+
+.who2 i {
+    color: #e74c3c;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+.who2 p {
+    font-size: 13px;
+}
+
+.purchase span {
+    color: #333;
+}
+
+.global-error,
+.errorlist li {
+    color: #b00020;
+}
+
+.global-success {
+    color: green;
+}
+
+ul.errorlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

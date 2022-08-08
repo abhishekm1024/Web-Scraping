@@ -1,0 +1,44 @@
+var Contact = function () {
+    return {
+        //Map
+        initMap: function () {
+            var map;
+
+            var addr1 = '<h5>Coriolis Technologies Pvt. Ltd. - I</h5><p>260/2/4 "Sai Pratik", Ganesh Baug,<br />Aundh, Pune 411007,<br />India</p>'
+
+            var addr2 = '<h5>Coriolis Technologies Pvt. Ltd. - II</h5><p>3rd floor, Westend Center III,<br />Aundh, Pune 411007,<br/>India</p>'
+
+            $(document).ready(function(){
+                map = new GMaps({
+                    div: '#map',
+                    //Coriolis ... I
+                    //lat: 18.55365,
+                    //lng: 73.80332
+
+                    //Coriolis ... II
+                    lat: 18.56472,
+                    lng: 73.80691,
+
+                    //Indus Bank - between I & II
+                    //lat: 18.56051,
+                    //lng: 73.80366,
+                    zoom: 13
+                });
+                map.addMarker({
+                    lat: 18.55365,
+                    lng: 73.80332,
+                    title: 'Coriolis Technologies Pvt. Ltd. - I',
+                    infoWindow: { content: addr1 }
+                });
+                map.addMarker({
+                    //lat: 18.56472,
+                    //lng: 73.80691, // back
+                    lat: 18.56480,
+                    lng: 73.80718, // front
+                    title: 'Coriolis Technologies Pvt. Ltd. - II',
+                    infoWindow: { content: addr2 }
+                });
+            });
+        }
+    };
+}();
